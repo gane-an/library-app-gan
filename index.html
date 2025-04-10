@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library | GAN</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      Designed by
+      <a href="http://linkedin.com/in/gane-an" target="_blank">Ganesan</a>
+    </div>
+    <div class="container">
+      <h4>Book Library</h4>
+      <form name="bookForm">
+        <input
+          type="text"
+          id="bookTitle"
+          placeholder="Book Title"
+          class="input"
+          required
+        />
+        <input
+          type="text"
+          id="bookAuthor"
+          placeholder="Book Author"
+          class="input"
+          required
+        />
+        <button type="submit" class="btn">Add</button>
+      </form>
+    </div>
+    <!-- Book Section -->
+    <section class="container">
+      <h4>Added Books (<span id="bookCount">0</span>)</h4>
+      <!-- Books are shown here -->
+      <ul id="bookList"></ul>
+    </section>
+
+    <!-- Script Files -->
+    <script src="./assets/js/library.js"></script>
+    <script src="./assets/js/book.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
